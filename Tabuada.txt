@@ -1,0 +1,41 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double vezes1,vezes2,vezes3,vezes4,vezes5,vezes6,vezes7,vezes8,vezes9,vezes10;
+			
+		Console.WriteLine("Me fale um numero para que eu mostre a tabuada:");
+		if (double.TryParse(Console.ReadLine(), out double num))
+		{
+			Console.WriteLine($"\nTabuada de {num} é: ");
+			
+				vezes1 = num * 1;
+				vezes2 = num * 2;
+				vezes3 = num * 3;
+				vezes4 = num * 4;
+				vezes5 = num * 5;
+				vezes6 = num * 6;
+				vezes7 = num * 7;
+				vezes8 = num * 8;
+				vezes9 = num * 9;
+				vezes10 = num * 10;
+			
+			Console.WriteLine($"{num} * 1 = {vezes1}");
+			Console.WriteLine($"{num} * 2 = {vezes2}");
+			Console.WriteLine($"{num} * 3 = {vezes3}");
+			Console.WriteLine($"{num} * 4 = {vezes4}");
+			Console.WriteLine($"{num} * 5 = {vezes5}");
+			Console.WriteLine($"{num} * 6 = {vezes6}");
+			Console.WriteLine($"{num} * 7 = {vezes7}");
+			Console.WriteLine($"{num} * 8 = {vezes8}");
+			Console.WriteLine($"{num} * 9 = {vezes9}");
+			Console.WriteLine($"{num} * 10 = {vezes10}");
+		}
+		else
+		{
+			Console.WriteLine("Por favor digite um numero.");
+		}
+	}
+}
